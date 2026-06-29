@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = 'http://localhost:8080/api';
+const BASE = 'https://inforvio-backend.onrender.com/api';
 
 const API = axios.create({ baseURL: BASE });
 
