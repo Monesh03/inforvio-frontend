@@ -338,20 +338,20 @@ export default function DocumentUploadPage() {
       {/* ── Add Applicant Modal ── */}
       {showAddApplicant && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm">
-            <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-bold text-gray-800">Add Applicant</h2>
+          <div className="bg-white rounded-2xl shadow-2xl p-10 w-full max-w-lg">
+            <div className="flex items-center justify-between mb-7">
+              <h2 className="text-2xl font-bold text-gray-800">Add Applicant</h2>
               <button onClick={() => { setShowAddApplicant(false); setNewName(''); }} className="text-gray-400 hover:text-gray-600">
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
             <form onSubmit={handleAddApplicant}>
-              <label className="block text-base text-gray-600 mb-1.5">Name</label>
+              <label className="block text-base text-gray-600 mb-2">Name</label>
               <input autoFocus type="text" value={newName} onChange={(e) => setNewName(e.target.value)}
-                className="w-full px-3 py-3 border-2 border-blue-500 rounded-lg text-base text-gray-800 focus:outline-none mb-6" />
-              <div className="flex gap-3 justify-center">
+                className="w-full px-4 py-3 border-2 border-blue-500 rounded-lg text-base text-gray-800 focus:outline-none mb-8" />
+              <div className="flex gap-3 justify-end">
                 <button type="submit" disabled={loading}
                   className="flex items-center gap-2 px-6 py-3 rounded-lg text-base font-semibold text-white"
                   style={{ backgroundColor: '#3b82f6' }}>
@@ -372,21 +372,21 @@ export default function DocumentUploadPage() {
       {/* ── Add Document Modal ── */}
       {showAddDoc && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm">
-            <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-bold text-gray-800">Add</h2>
+          <div className="bg-white rounded-2xl shadow-2xl p-10 w-full max-w-lg">
+            <div className="flex items-center justify-between mb-7">
+              <h2 className="text-2xl font-bold text-gray-800">Add</h2>
               <button onClick={() => { setShowAddDoc(false); setNewDoc(''); }} className="text-gray-400 hover:text-gray-600">
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
             <form onSubmit={handleAddDocument}>
-              <label className="block text-base text-gray-600 mb-1.5">Document Name</label>
+              <label className="block text-base text-gray-600 mb-2">Document Name</label>
               <input autoFocus type="text" value={newDoc} onChange={(e) => setNewDoc(e.target.value)}
                 placeholder="e.g. Passport, Resume"
-                className="w-full px-3 py-3 border-2 border-blue-500 rounded-lg text-base text-gray-800 focus:outline-none mb-6" />
-              <div className="flex gap-3 justify-center">
+                className="w-full px-4 py-3 border-2 border-blue-500 rounded-lg text-base text-gray-800 focus:outline-none mb-8" />
+              <div className="flex gap-3 justify-end">
                 <button type="submit" disabled={loading}
                   className="flex items-center gap-2 px-6 py-3 rounded-lg text-base font-semibold text-white"
                   style={{ backgroundColor: '#3b82f6' }}>
