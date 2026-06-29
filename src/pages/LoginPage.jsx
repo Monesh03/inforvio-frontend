@@ -66,8 +66,8 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <header className="flex items-center px-8 py-5">
-        <img src="/Logo.png" alt="Inforvio" className="h-14 w-auto" />
+      <header className="flex items-center px-0 sm:px-8 py-4 sm:py-5">
+        <img src="/Logo.png" alt="Inforvio" className="h-12 sm:h-14 w-auto" />
       </header>
 
       <div className="flex flex-1 items-center justify-center px-4">
