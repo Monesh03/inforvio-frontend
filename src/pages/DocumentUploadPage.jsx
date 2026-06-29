@@ -124,7 +124,7 @@ export default function DocumentUploadPage() {
     <div className="bg-white flex flex-col p-8" style={{ minHeight: '100vh' }}>
 
       {/* ── Header ── */}
-      <div className="flex items-center justify-between px-8 py-5">
+      <div className="flex items-center justify-between px-8 py-5 mb-8">
         <h1 className="text-4xl font-bold text-gray-800">Document Upload</h1>
         <button onClick={() => setShowAddApplicant(true)}
           className="flex items-center gap-2 px-6 py-3 rounded-lg text-base font-semibold text-white"
@@ -162,7 +162,7 @@ export default function DocumentUploadPage() {
       {activeApplicant && (
         <div className="flex gap-6 px-8 py-6">
           {/* Left — document list */}
-          <div className="flex flex-col gap-3" style={{ minWidth: 160 }}>
+          <div className="flex flex-col gap-6" style={{ minWidth: 160 }}>
             {activeApplicant.documents.map((doc) => (
               <button
                 key={doc.docId}
@@ -313,7 +313,7 @@ export default function DocumentUploadPage() {
       )}
 
       {/* ── Back / Next ── */}
-      <div className="flex items-center justify-between px-8 py-4">
+      <div className="flex items-center justify-between px-8 py-4 mt-8">
         <button onClick={goBack} disabled={activeIndex === 0}
           className="flex items-center gap-2 px-6 py-3 rounded-lg text-base font-semibold text-white disabled:opacity-50"
           style={{ backgroundColor: '#3b82f6' }}>
